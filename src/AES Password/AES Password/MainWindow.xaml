@@ -1,0 +1,23 @@
+﻿<Window x:Class="AES_Password.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AES_Password"
+        mc:Ignorable="d"
+        Title="AES Password" Height="350" Width="525" ResizeMode="CanMinimize" Icon="Icon.ico">
+    <Grid>
+        <StackPanel Margin="10" VerticalAlignment="Top">
+            <Label Content="Senha" />
+            <TextBox x:Name="Senha" />
+            <Label Content="Chave (Base64)" />
+            <TextBox x:Name="Chave" />
+        </StackPanel>
+        <StackPanel Margin="10" VerticalAlignment="Bottom">
+            <Label Content="Resultado" />
+            <TextBox x:Name="Resultado" Height="150" />
+        </StackPanel>
+        <Button x:Name="btnCriptografar" Content="Criptografar" Margin="10,103,265,0" VerticalAlignment="Top" Click="btnCriptografar_Click"/>
+        <Button x:Name="btnDescriptografar" Content="Descriptografar" Margin="265,103,10,0" VerticalAlignment="Top" Click="btnDescriptografar_Click" />
+    </Grid>
+</Window>
